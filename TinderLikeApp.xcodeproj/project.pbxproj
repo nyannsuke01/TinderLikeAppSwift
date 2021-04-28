@@ -16,6 +16,7 @@
 		CEF1E3C8263956C1003B1E3E /* TinderLikeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1E3C7263956C1003B1E3E /* TinderLikeAppUITests.swift */; };
 		CEF1E3E326395F4B003B1E3E /* BottomControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1E3E226395F4B003B1E3E /* BottomControlView.swift */; };
 		CEF1E3F02639A8C2003B1E3E /* UIImage-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1E3EF2639A8C2003B1E3E /* UIImage-Extention.swift */; };
+		CEF1E3F82639AF23003B1E3E /* TopControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1E3F72639AF23003B1E3E /* TopControlView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		CEF1E3C9263956C1003B1E3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEF1E3E226395F4B003B1E3E /* BottomControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomControlView.swift; sourceTree = "<group>"; };
 		CEF1E3EF2639A8C2003B1E3E /* UIImage-Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage-Extention.swift"; sourceTree = "<group>"; };
+		CEF1E3F72639AF23003B1E3E /* TopControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopControlView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				CEF1E3E226395F4B003B1E3E /* BottomControlView.swift */,
+				CEF1E3F72639AF23003B1E3E /* TopControlView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF1E3F82639AF23003B1E3E /* TopControlView.swift in Sources */,
 				CEF1E3AA263956BE003B1E3E /* HomeViewController.swift in Sources */,
 				CEF1E3A6263956BE003B1E3E /* AppDelegate.swift in Sources */,
 				CEF1E3F02639A8C2003B1E3E /* UIImage-Extention.swift in Sources */,
