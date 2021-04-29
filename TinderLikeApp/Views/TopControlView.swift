@@ -52,40 +52,36 @@ class TopControlView: UIView {
     }
     
     private func setupBindings() {
-        
         tinderButton.rx.tap
-            .subscribe { _ in
-                self.handleSelectedButton(selectedBtton: self.tinderButton)
+            .subscribe {_ in
+                self.handleSelectedButton(selectedButton: self.tinderButton)
             }
             .disposed(by: disposeBag)
-        
         goodButton.rx.tap
-            .subscribe { _ in
-                self.handleSelectedButton(selectedBtton: self.goodButton)
+            .subscribe {_ in
+                self.handleSelectedButton(selectedButton: self.goodButton)
 
             }
             .disposed(by: disposeBag)
-        
         commentButton.rx.tap
-            .subscribe { _ in
-                self.handleSelectedButton(selectedBtton: self.commentButton)
+            .subscribe {_ in
+                self.handleSelectedButton(selectedButton: self.commentButton)
 
             }
             .disposed(by: disposeBag)
-        
         profileButton.rx.tap
-            .subscribe { _ in
-                self.handleSelectedButton(selectedBtton: self.profileButton)
+            .subscribe {_ in
+                self.handleSelectedButton(selectedButton: self.profileButton)
 
             }
             .disposed(by: disposeBag)
     }
     
-    private func handleSelectedButton(selectedBtton: UIButton) {
+    private func handleSelectedButton(selectedButton: UIButton) {
         let buttons = [tinderButton, goodButton, commentButton, profileButton]
         
         buttons.forEach { button in
-            if button == selectedBtton {
+            if button == selectedButton {
                 button.isSelected = true
             } else {
                 button.isSelected = false
