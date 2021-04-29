@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,9 @@
 		CEF1E3E326395F4B003B1E3E /* BottomControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1E3E226395F4B003B1E3E /* BottomControlView.swift */; };
 		CEF1E3F02639A8C2003B1E3E /* UIImage-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1E3EF2639A8C2003B1E3E /* UIImage-Extention.swift */; };
 		CEF1E3F82639AF23003B1E3E /* TopControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1E3F72639AF23003B1E3E /* TopControlView.swift */; };
+		CEF1E3FE263A75DF003B1E3E /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CEF1E3FD263A75DF003B1E3E /* RxSwift */; };
+		CEF1E400263A75DF003B1E3E /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = CEF1E3FF263A75DF003B1E3E /* RxCocoa */; };
+		CEF1E402263A75DF003B1E3E /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = CEF1E401263A75DF003B1E3E /* RxRelay */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF1E402263A75DF003B1E3E /* RxRelay in Frameworks */,
+				CEF1E400263A75DF003B1E3E /* RxCocoa in Frameworks */,
+				CEF1E3FE263A75DF003B1E3E /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +180,11 @@
 			dependencies = (
 			);
 			name = TinderLikeApp;
+			packageProductDependencies = (
+				CEF1E3FD263A75DF003B1E3E /* RxSwift */,
+				CEF1E3FF263A75DF003B1E3E /* RxCocoa */,
+				CEF1E401263A75DF003B1E3E /* RxRelay */,
+			);
 			productName = TinderLikeApp;
 			productReference = CEF1E3A2263956BE003B1E3E /* TinderLikeApp.app */;
 			productType = "com.apple.product-type.application";
@@ -245,6 +256,9 @@
 				Base,
 			);
 			mainGroup = CEF1E399263956BE003B1E3E;
+			packageReferences = (
+				CEF1E3FC263A75DE003B1E3E /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = CEF1E3A3263956BE003B1E3E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -617,6 +631,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEF1E3FC263A75DE003B1E3E /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = exactVersion;
+				version = 6.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CEF1E3FD263A75DF003B1E3E /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEF1E3FC263A75DE003B1E3E /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		CEF1E3FF263A75DF003B1E3E /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEF1E3FC263A75DE003B1E3E /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		CEF1E401263A75DF003B1E3E /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEF1E3FC263A75DE003B1E3E /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEF1E39A263956BE003B1E3E /* Project object */;
 }
